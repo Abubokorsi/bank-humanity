@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Humanity</title>
+    <!-- favicon-icon -->
+    <link
+      rel="shortcut icon"
+      href="images/favicon-icon.jpg"
+      type="image/x-icon"
+    />
+    <!-- bootstrap-css -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <!-- custom-css -->
+    <link rel="stylesheet" href="custom css/style.css" />
+  </head>
+  <body>
+    <div id="login-area">
+      <h2 class="text-center">Welcome To Bank of Humanity</h2>
+      <form action="">
+        <div class="submit-area">
+          <h4>Login</h4>
+          <input
+            type="Email"
+            name="email"
+            class="form-control"
+            placeholder="Input Email"
+            required
+          />
+          <br />
+          <input
+            type="password"
+            name="password"
+            class="form-control"
+            placeholder="Input Password"
+            required
+          />
+          <br />
+          <input
+            type="submit"
+            id="login"
+            class="btn btn-success btn-lg"
+            value="Enter"
+          />
+        </div>
+      </form>
+    </div>
+    <div id="transaction-area">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="deposit status">
+            <h4>Deposit</h4>
+            <h1>$<span id="currentDeposit">00</span></h1>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="withdraw status">
+            <h4>Withdraw</h4>
+            <h1>$<span id="currentWithdraw">00</span></h1>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="balance status">
+            <h4>Balance</h4>
+            <h1>$<span id="currentBalance">1420</span></h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="transaction-submit-area">
+            <form action="">
+              <h4>Deposit</h4>
+              <input
+                id="depositAmount"
+                type="text"
+                class="form-control"
+                placeholder="$amount you want to withdraw"
+                required
+              />
+              <br />
+              <input
+                type="submit"
+                id="deposit"
+                class="btn btn-success"
+                value="Deposit"
+              />
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="transaction-submit-area">
+            <form action="">
+              <h4>Withdraw</h4>
+              <input
+                id="withdrawAmount"
+                type="text"
+                class="form-control"
+                placeholder="$amount you want to deposit"
+                required
+              />
+              <br />
+              <input
+                type="submit"
+                id="withdraw"
+                class="btn btn-success"
+                value="Withdraw"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstrap js  -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- custom js-->
+    <script src="custom-js/custom.js"></script>
+  </body>
+</html>
